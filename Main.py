@@ -5,7 +5,7 @@ from discord import Intents, Status, Game
 bot = commands.Bot(command_prefix={"!","?","."}, intents=Intents.all())
 
 @bot.event
-async def on_ready()
+async def on_ready():
     print(f"Logged in as {bot.user}")
     await bot.change_presence(status=Status.online, activity=Game(name="HERE'S IT'S EXAMPLE DISCORD BOT PYTHON"))
     try:
